@@ -22,6 +22,7 @@ const (
 // Do not close the supplied ReadSeekCloser, instead, use the Close method of the returned
 // StreamSeekCloser when you want to release the resources.
 func Decode(rc io.ReadCloser) (s beep.StreamSeekCloser, format beep.Format, err error) {
+	fmt.Println("todo")
 	defer func() {
 		if err != nil {
 			err = errors.Wrap(err, "mp3")
